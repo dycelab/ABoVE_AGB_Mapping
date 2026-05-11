@@ -131,6 +131,7 @@ tree_dta$Code[tree_dta$species_g=='RHUS']= 'PRUN.SER'
 
 #### step 3: define functions to calculate AGB for tree with and without tree height   ####
 # for species without a specific allometry or similar tree species with allometry is not found, below code use species code 'UNKN.SPP' meaning unknown species
+library(CanadaForestAllometry)
 get_agb = function(dbh, code){
   outs = tryCatch({
     AGB_LambertUngDBH(dbh, code)},error = function(e){
