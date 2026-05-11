@@ -1,5 +1,5 @@
 
-
+# the key library to calculate tree AGB is: CanadaForestAllometry  
 #### step 1: set work directory and read tree level data  ####
 work_dir = ''
 setwd(work_dir)
